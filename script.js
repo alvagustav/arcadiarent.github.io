@@ -408,15 +408,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Inisialisasi ---
-    // Panggil renderProducts() di semua halaman
-    // Ini akan mengisi div produk yang kosong dan menambahkan event listener
     renderProducts();
 
-    // Perbarui tampilan keranjang saat halaman dimuat (dari localStorage)
     updateCartDisplay();
 
-    // Sembunyikan bagian checkout saat pertama kali dimuat (hanya di index.html)
     if (checkoutSection) {
         checkoutSection.classList.add('hidden');
     }
